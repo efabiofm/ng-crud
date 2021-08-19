@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1",
+    "name": "Lorem",
+    "type": "Type",
+    "description": "Description",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+    ],
+    "editable": true,
+    "inactive": false,
+    "dateCreated": "28/07/2021",
+    "lastUpdate": ""
+  },
+  {
+    "id": "2",
+    "name": "Ipsum",
+    "type": "Type",
+    "description": "Description",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+    ],
+    "editable": true,
+    "inactive": false,
+    "dateCreated": "25/07/2021",
+    "lastUpdate": "27/07/2021"
+  },
+  {
+    "id": "3",
+    "name": "Dolor",
+    "type": "Type",
+    "description": "Description",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+    ],
+    "editable": false,
+    "inactive": true,
+    "dateCreated": "20/07/2021",
+    "lastUpdate": ""
+  }
+]

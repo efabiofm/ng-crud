@@ -1,0 +1,33 @@
+<div>
+  <div class="card">
+    <div class="card-body">
+      <div class="d-flex justify-content-end inactive-header">
+        <span *ngIf="item.inactive" class="badge badge-danger">Inactive</span>
+      </div>
+      <h5 class="card-title">{{item.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{item.type}}</h6>
+      <p class="card-text">{{item.description}}</p>
+      <div>
+        <img
+          class="rounded-circle mr-1"
+          *ngFor="let img of item.images.slice(0, 6)"
+          [src]="img"
+          width="28px">
+        <span *ngIf="item.images.length > 6">+{{item.images.length - 6}}</span>
+      </div>
+    </div>
+    <div class="card-footer d-flex align-items-center justify-content-between actions-footer">
+      <div>
+        <span *ngIf="item.lastUpdate">Last update: {{item.lastUpdate}}</span>
+        <span *ngIf="!item.lastUpdate">Date created: {{item.dateCreated}}</span>
+      </div>
+      <div *ngIf="item.editable">
+        <button class="btn">Edit</button>
+        <button class="btn text-danger">Delete</button>
+      </div>
+      <div *ngIf="!item.editable">
+        <fa-icon [icon]="faLock"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>
