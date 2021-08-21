@@ -22,7 +22,7 @@
         <span *ngIf="!item.lastUpdate">Date created: {{item.dateCreated}}</span>
       </div>
       <div *ngIf="item.editable">
-        <button class="btn">Edit</button>
+        <button class="btn" (click)="editRole(item.id)">Edit</button>
         <button class="btn text-danger">Delete</button>
       </div>
       <div *ngIf="!item.editable">

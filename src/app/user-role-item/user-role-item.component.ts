@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IUserRole } from '../services/user-roles.service';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-role-item',
@@ -12,9 +13,13 @@ export class UserRoleItemComponent implements OnInit {
 
   faLock = faLock;
   
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  editRole(id: string): void {
+    this.router.navigate(['user-role-form', id]);
   }
 
 }

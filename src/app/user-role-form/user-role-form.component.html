@@ -1,0 +1,49 @@
+<div class="container">
+  <h1>User Role Form</h1>
+  <form [formGroup]="roleForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        class="form-control"
+        type="text"
+        id="name"
+        formControlName="name"
+        required
+      />
+      <div *ngIf="getFieldError('name')" class="text-danger">
+        Name is required.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input
+        class="form-control"
+        type="text"
+        id="type"
+        formControlName="type"
+        required
+      />
+      <div *ngIf="getFieldError('type')" class="text-danger">
+        Type is required.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea
+        class="form-control"
+        type="text"
+        id="description"
+        formControlName="description"
+        required
+      >
+      </textarea>
+      <div *ngIf="getFieldError('description')" class="text-danger">
+        Description is required.
+      </div>
+    </div>
+    <div>
+      <button class="btn mr-2" routerLink="/user-roles-management">Back</button>
+      <button class="btn btn-primary" type="submit">Save</button>
+    </div>
+  </form>
+</div>
